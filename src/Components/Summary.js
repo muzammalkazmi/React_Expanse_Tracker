@@ -2,9 +2,9 @@ import React from 'react'
 export const Summary=()=>{
     return(
     <div>
-        <h2>Income</h2>
+        <h3>Income</h3>
         <span>$0.00</span>
-        <h2>Expanses</h2>
+        <h3>Expanses</h3>
         <span>$0.00</span>
 
     </div>

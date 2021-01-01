@@ -1,3 +1,4 @@
+
 import React,{useContext} from 'react'
 import {Header,Balance,History,Summary,AddTransactions}from './Components'
 import {GlobalContext} from './context/GlobalContext'
@@ -15,6 +16,7 @@ function App() {
     </div>
     </GlobalContext.Provider>
   );
+
 }
 
 export default App;

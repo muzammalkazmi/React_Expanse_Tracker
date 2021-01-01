@@ -2,22 +2,22 @@
  import AppReducer from './AppReducer'
 
  const firstState = {
-         transactions: [
+         transactions:[
              { id: 1, Description: 'Paid Salaries', Amount: 2000 },
-             { id: 1, Description: 'Paid Salaries', Amount: 2000 },
-             { id: 1, Description: 'Paid Salaries', Amount: 2000 },
-             { id: 1, Description: 'Paid Salaries', Amount: 2000 }
+             { id: 2, Description: 'Paid Salarwer', Amount: 2000 },
+             { id: 3, Description: 'Paid wages', Amount: 2000 },
+             { id: 4, Description: 'Paid bonus', Amount: 2000 }
          ]
      }
      //store above firstState in variable to further use//
- const GlobalContext = createContext(firstState);
+ export const GlobalContext = createContext(firstState);
  //GlobalProvider created here to use in App.js//                                                                                 
  export const GlobalProvider = ({ children }) => {
      const [state, Dispatch] = useReducer(AppReducer, firstState)
-     return ( <
-         GlobalContext.Provider value = {
-             { firstState: state.firstState }
-         } > { children } <
-         /GlobalContext.Provider>
+     return ( 
+     <GlobalContext.Provider value = {
+             { transactions: state.transactions }
+         } > { children } 
+         </GlobalContext.Provider>
      )
  }

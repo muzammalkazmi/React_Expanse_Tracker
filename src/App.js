@@ -1,20 +1,20 @@
 
-import React,{useContext} from 'react'
+import React from 'react'
 import {Header,Balance,History,Summary,AddTransactions}from './Components'
-import {GlobalContext} from './context/GlobalContext'
+import {GlobalProvider} from './Components/Context/GlobalData'
 import './App.css'
 
 function App() {
   return (
-    <GlobalContext.Provider>
-    <div className="container">
+    <GlobalProvider >
+    <div className="App">
     <Header/><hr/>
     <Balance/><hr/>
     <Summary/><hr/>
     <History/><hr/>
     <AddTransactions/><hr/>
     </div>
-    </GlobalContext.Provider>
+    </GlobalProvider>
   );
 
 }

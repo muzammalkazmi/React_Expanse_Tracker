@@ -1,11 +1,11 @@
 import React from 'react'
 export const Summary=()=>{
     return(
-    <div>
-        <h3>Income</h3>
-        <span>$0.00</span>
-        <h3>Expanses</h3>
-        <span>$0.00</span>
+    <div className='summary'>
+        <h3>Income <br/> <span>$0.00</span></h3>
+        
+        <h3>Expanses <br/><span>$0.00</span></h3>
+        
 
     </div>
     )

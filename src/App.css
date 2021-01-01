@@ -1,6 +1,12 @@
 
 .App{
   width: 400px;
-  height: 400px;
+  height: 600px;
   background-color: gray;
+}
+.summary{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0px;
+
 }

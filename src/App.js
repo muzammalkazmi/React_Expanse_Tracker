@@ -1,12 +1,16 @@
-import { Header, Balance, History, Summary, AddTransactions } from './Components'
-import './App.css'
-import { GlobalProvider } from './Context/GlobalData'
-
+import {
+    Header,
+    Balance,
+    History,
+    Summary,
+    AddTransactions,
+} from "./Components";
+import "./App.css";
+import { GlobalProvider } from "./Context/GlobalData";
 
 function App() {
     return ( <
         GlobalProvider.Provider >
-
         <
         div className = "App" >
         <
@@ -20,8 +24,8 @@ function App() {
         <
         AddTransactions / >
         <
-        /div> < /
-        GlobalProvider.Provider >
+        /div> <
+        /GlobalProvider.Provider>
     );
 }
 

@@ -1,8 +1,10 @@
 
-import React,{useState} from 'react'
+import React,{useState,useContext} from 'react'
+import { GlobalContext } from './Context/GlobalData'
 export const AddTransactions=()=>{
     const [Description,setDescription]=useState('')
     const [Amount,setAmount]=useState(0)
+    const{AddTransactions}=useContext(GlobalContext)
     return(
         
 

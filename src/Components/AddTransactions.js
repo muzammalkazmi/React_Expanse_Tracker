@@ -5,6 +5,16 @@ export const AddTransactions=()=>{
     const [Description,setDescription]=useState('')
     const [Amount,setAmount]=useState(0)
     const{AddTransactions}=useContext(GlobalContext)
+    const onSubmit =(e)=>{
+        e.preventDefault();
+        const newTransaction=()=>{
+            id:new Date().getDate(),
+            description,
+            Amount +Amount
+
+        }
+        AddTransactions(newTransaction)
+    }
     return(
         
 
